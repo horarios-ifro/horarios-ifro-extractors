@@ -1,0 +1,26 @@
+{
+  "name": "@horarios-ifro/extractors",
+  "version": "0.0.14",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "yarn clear && tsc -p .",
+    "clear": "rimraf dist"
+  },
+  "files": [
+    "/dist"
+  ],
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.2",
+    "lodash": "^4.17.21",
+    "pdfjs-dist": "^2.14.305",
+    "query-selector": "^2.0.0",
+    "short-uuid": "^4.2.0",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^18.6.1",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2"
+  }
+}
