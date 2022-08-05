@@ -18,9 +18,8 @@ export const getInfoFromDiscussionListItem = async (
 
   const title = anchorElement.textContent!.trim();
 
-  const publishedAt = parseInt(
-    timeCreatedElement.getAttribute("data-timestamp")!
-  );
+  const publishedAt =
+    parseInt(timeCreatedElement.getAttribute("data-timestamp")!) * 1000;
 
   return {
     link,

@@ -9,6 +9,8 @@ export const getWeekFromExtractedPDFInfos = (
 ): IWeek => {
   return {
     pdfURL: extractedPDFInfos.url,
+    startDate: extractedPDFInfos.startDate,
+    endDate: extractedPDFInfos.endDate,
     items: extractedPDFInfos.classes.reduce(
       (acc, klassInfo) => [
         ...acc,
